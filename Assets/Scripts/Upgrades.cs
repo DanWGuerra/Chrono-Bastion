@@ -68,7 +68,7 @@ public class Upgrades : MonoBehaviour
         if (GameManager.Instance.SpendPoints(damageCost))
         {
             tower.damage += 0.5f; // Increase tower’s bullet damage
-            damageCost += 20;   // Cost rises by 10 each time
+            damageCost += 10;   // Cost rises by 10 each time
             UpdateUI();
         }
     }

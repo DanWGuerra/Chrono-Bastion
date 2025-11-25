@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
 
         if (TimetoPowerUp >= 25)
         {
+            TimetoPowerUp = 0;
             enemySpawner.IncreaseDifficulty();
         }
         elapsedTime += Time.deltaTime;
